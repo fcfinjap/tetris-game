@@ -10,7 +10,7 @@ import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 
 @SuppressWarnings("serial")
-public class Game extends JFrame implements Runnable {
+public class Tetris extends JFrame implements Runnable {
 	
 	public JLabel status;
 	public JLabel score;
@@ -100,7 +100,7 @@ public class Game extends JFrame implements Runnable {
 	}
 
 	public static void main(String[] args) {
-		SwingUtilities.invokeLater(new Game());
+		SwingUtilities.invokeLater(new Tetris());
 	}
 
 }
