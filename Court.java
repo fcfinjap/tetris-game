@@ -31,7 +31,7 @@ public class Court extends JPanel implements ActionListener {
 	private Tetronimo.Shapes[] grid;
 	private Timer actTime;
 	private int score = 0;
-	private Game refGame;
+	private Tetris refGame;
 	private int actionInc = 700;
 	private int level = 1;
 	private KeyAdapter controls;
@@ -45,7 +45,7 @@ public class Court extends JPanel implements ActionListener {
 	
 	
 
-	public Court(Game game) {
+	public Court(Tetris game) {
 		setSize(100, 220);
 		setFocusable(true);
 		refPiece = new Tetronimo();
